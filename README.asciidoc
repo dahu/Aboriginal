@@ -1,0 +1,4 @@
+Aboriginal
+----------
+
+__User Completion Function for Abbreviations in Vim__
