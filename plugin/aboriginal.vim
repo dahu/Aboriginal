@@ -24,12 +24,7 @@ function! CompleteAbbrevs(findstart, base)
     return start
   else
     let res = AbbrList(a:base)
-    " To show just the popup of abbreviations, use:
-    "return map(res, 'v:val[0]')
-
-    " Alternatively, to show the abbrev completion too, use:
-    return map(res, '{"word": v:val[1], "abbr": v:val[0]}')
+    return map(res, 'v:val[0]')
   endif
 endfun
 set completefunc=CompleteAbbrevs
-
